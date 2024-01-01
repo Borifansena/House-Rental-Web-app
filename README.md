@@ -32,9 +32,9 @@ Welcome to our House-Rental-Web-app It is a platform that connects landlords and
 
 
 Group members
-	Name	                     ID
-1. Bikila Tariku             UGR/8089/14 
-2. Fethiya Safi 	           UGR/7007/13
-3. Milko Shuma	             UGR/4707/13
+	.Name	                    . ID
+1. Bikila Tariku                   UGR/8089/14 
+2. Fethiya Safi 	            UGR/7007/13
+3. Milko Shuma	                    UGR/4707/13
    
 
