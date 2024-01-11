@@ -1,0 +1,89 @@
+/* Base styles for the body and text */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  text-align: center; /* Align content to the center */
+  color: bisque; /* Ensure text readability against the background */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 100px; /* Adjust spacing as needed */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Styles for the image */
+#finder {
+  width: 300px;
+  margin: 40px auto; /* Center the image horizontally */
+  border-radius: 10px; /* Optional: Add rounded corners for a softer look */
+}
+
+/* Styles for the buttons */
+.buttons {
+  background-color: #007bff; /* Use a contrasting color for buttons */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.buttons:hover {
+  background-color: #0062cc; /* Add a hover effect for interactivity */
+}
+
+/* Styles for the quote */
+#quote {
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+/* Additional styling for improved readability */
+.links {
+  text-decoration: none; /* Remove underline from links within buttons */
+  color: inherit; /* Inherit button text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 3rem;
+      margin-top: 80px; /* Adjust spacing for smaller screens */
+  }
+
+  p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+  }
+
+  #finder {
+      width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem;
+      margin-top: 60px; /* Adjust spacing for smaller screens */
+  }
+
+  p {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+  }
+
+  #finder {
+      width: 200px;
+  }
+}

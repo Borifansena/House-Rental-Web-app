@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact | Find Nest</title>
+    <link rel="stylesheet" href="Adminpage.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="Group 1(1).png" />
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Adminpage.html">Admin</a></li>
+        </ul>
+      </div>
+    </header>  
+
+    <main>
+    <h1>Welcome To Admin Page</h1>
+
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter address" />
+    </div>
+
+    <div>
+      <label for="houseId">House ID:</label>
+      <input type="text" id="houseId" placeholder="Enter house ID" />
+    </div>
+
+    <div class="button-group">
+      <button id="fetchBtn">Fetch House</button>
+      <button id="createBtn">Create House</button>
+      <button id="updateBtn">Update House</button>
+      <button id="deleteBtn">Delete House</button>
+      <button class="rent-button">Rent</button>
+    </div>
+
+    <div>
+      <h2>Houses:</h2>
+      <ul id="houseList"></ul>
+    </div>
+
+
+  </main>
+
+    <footer>
+
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li>
+                      <a href="safibunny9016@gmail.com">safibunny9016@gmail.com</a>
+                    </li>
+                    <li><a href="#">Phone number 0912345678 </a></li>
+                    <li><a href="#">@fetu99</a></li>
+                  </ul>
+                </div>
+      
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+      
+
+    </footer>
+    <script src="house.js"></script>
+
+  </body>
+</html>

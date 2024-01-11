@@ -1,0 +1,503 @@
+body {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    animation-name: bodyAnimation;
+    animation-duration: 4s;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+}
+
+#navbar {
+    position: fixed;
+    overflow: hidden;
+    background-color: var(--primarycolor);
+    height: 60px;
+    width: 100%;
+    padding: 0;
+}
+
+#smallMenuBar {
+    color: var(--secondary-color);
+}
+
+ul {
+    display: flex;
+    float: right;
+}
+
+i {
+    display: inline-flex
+}
+
+:root {
+    --primarycolor: #3d5af1;
+    --secondary-color: #fff;
+    --font-family: Microsoft Tai Le, monospace;
+}
+
+.darkTheme {
+    --primarycolor: rgba(2, 2, 102, 0.884);
+    --secondary-color: black;
+}
+
+#modeChanger {
+    width: 20px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+@keyframes bodyAnimation {
+    from {
+        background-color: var(--primarycolor);
+    }
+
+    to {
+        transition-duration: 0.5s;
+        display: inline-table;
+    }
+}
+a{
+    color: #3d5af1;
+    font-family: var(--font-family);
+    font-size: large;
+}
+.links {
+
+    text-decoration: none;
+    float: right;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    height: 45px;
+    width: 110px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-family: Leelawadee, monospace;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+    height: 10px;
+    width: 120px;
+
+}
+
+.links:hover {
+    color: var(--primarycolor);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    height: 30px;
+}
+
+li {
+    list-style-type: none;
+    font-family: Leelawadee, monospace;
+    color: var(--secondary-color);
+    text-align: center;
+    display: inline;
+}
+
+.importantClicks {
+    float: right;
+    color: var(--secondary-color);
+    display: inline;
+    cursor: pointer;
+    align-items: stretch;
+}
+
+.cards {
+    border-radius: 10px;
+    background-color: #92a2fdaf;
+    margin: 20px 10px;
+    width: 400px;
+    height: 490px;
+    padding: 15px;
+
+    display: inline-flexbox;
+}
+
+.cards:first-child {
+    margin-top: 0px;
+}
+
+
+.cards:hover {
+    /* added the scale element */
+    border-radius: 10px;
+    transform: scale(1.01);
+    /* width: 410px;
+    height: 490px; */
+    transition: 0.1s ease-in-out;
+    background-color: var(--primarycolor);
+    color: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0px 1px 2px 2px var(--primarycolor);
+    z-index: -16;
+
+}
+
+.cards:hover img {
+    border-radius: 90px / 35px;
+    border: 5px solid var(--secondary-color);
+    transition-duration: 0.5s;
+}
+
+.cards:hover .houseButtons {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.houseImages {
+    border-radius: 5px;
+    border: 10px solid var(--primarycolor);
+    margin-left: 10px;
+}
+
+.houseButtons {
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin: 2px 0px;
+    display: none;
+    border: 2px solid var(--primarycolor);
+    outline: 2px solid var(--secondary-color);
+}
+
+.houseButtons:hover {
+    /* background-color: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100)); */
+    color: var(--secondary-color);
+    font-weight: bolder;
+    height: 45px;
+    width: 210px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    border: 2px var(--primarycolor);
+}
+
+.houseLinks {
+    text-decoration: none;
+
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primarycolor);
+    padding-top: 0px;
+}
+
+.houseDescription {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#image {
+    /* display:none; */
+    border-radius: 5px;
+    box-shadow: 10px 5px 13px 1px #000;
+transform: translate(520px, 100px);
+display:none;
+}
+
+.introduction {
+    float: left;
+    padding: auto;
+    margin: 15px;
+    font-size: large;
+    width: 470px;
+    color: var(--secondary-color);
+    font-size: larger;
+    font-family: var(--font-family);
+}
+
+#time {
+    font-weight: bold;
+}
+
+#caption {
+    font-size: 40px;
+    color: var(--primarycolor);
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--font-family);
+    height: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#searchBox {
+    display: inline;
+    height: 30px;
+    margin-top: 0px;
+    animation-name: searchBoxAnimation;
+    animation-duration: 4s;
+    margin-right: 20px;
+}
+
+@keyframes searchBoxAnimation {
+    from {
+        background-color: var(--primarycolor);
+    }
+
+    to {
+        background-color: var(--secondary-color);
+    }
+}
+
+#search {
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#searchButton {
+    border-bottom: 3px solid var(--primarycolor);
+    border-left: 3px solid var(--primarycolor);
+    border-top: 3px solid var(--primarycolor);
+    padding-top: 5px;
+}
+
+
+
+.changePageLinks {
+    text-decoration: none;
+    color: var(--primarycolor);
+}
+
+.changePageLinks:hover {
+    background-color: var(--primarycolor);
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.changePageListItems {
+    width: 300px;
+}
+
+#goToDiv {
+    font-family: lelawadee, monospace;
+    font-weight: bold;
+    font-size: larger;
+    color: var(--primarycolor);
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--primarycolor);
+    width: 20%;
+    border-radius: 5px;
+    height: 30px;
+    animation-name: goToDivAnimation;
+    animation-duration: 4s;
+    padding-left: 20px;
+margin-top: 100px;
+display: flex;
+justify-content: center;
+flex-direction: wrap;
+}
+
+@keyframes goToDivAnimation {
+    from {
+        background-color: var(--primarycolor);
+    }
+
+    to {
+        background-color: var(--secondary-color);
+    }
+}
+
+#goToDiv:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navigatorToPage {
+    padding: 5px; 
+     height: 120px;
+    color: var(--primarycolor);
+    visibility: hidden;
+    display: flex;
+    border: 2px solid var(--primarycolor);
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#goToDiv:hover #navigatorToPage {
+    visibility: visible;
+    display: flex;
+justify-content: center;
+flex-direction: wrap;
+transition-duration: 0.6s;
+}
+
+.fas {
+    color: var(--secondary-color);
+    margin: 10px;
+    font-size: larger;
+}
+
+#footer {
+    height: 400px;
+    /* clip-path: ellipse(88% 100% at 84% 100%);
+    background-color: var(--primarycolor); */
+    color: black;
+    align-items: center;
+    width: 100%;
+}
+
+#primaryDiv {
+
+   
+    
+    column-count: 3;
+    column-gap: 0px;
+    width: 100%;
+    padding: 100px 5px;
+    /* display: grid; */
+     /* display: inline-flexbox; */
+    /* grid-template-columns:1fr 1fr 1fr; */
+}
+
+@media screen and (max-width: 1343px) {
+
+    #goToDiv {
+        font-family: lelawadee, monospace;
+        font-weight: bold;
+        font-size: larger;
+        color: var(--primarycolor);
+        margin-top: 10px;
+        background-color: var(--secondary-color);
+        border: 3px solid var(--primarycolor);
+        width: 200px;
+        border-radius: 5px;
+        height: 30px;
+        position: relative;
+
+        animation-duration: 4s;
+        padding-left: 20px;
+    }
+
+    .cards {
+        transform: scale(0.8);
+    }
+
+    
+.cards:hover {
+    /* added the scale element */
+    border-radius: 10px; 
+    transform: scale(1.01); 
+    width: 410px; 
+    height: 490px; 
+    transition: 0.1s ease-in-out;
+    background-color: var(--primarycolor); 
+    color: var(--secondary-color);
+    padding: 20px; 
+     box-shadow: 0px 1px 2px 2px var(--primarycolor); 
+z-index: -20;
+}
+
+ .cards:hover img {
+    border-radius: 90px / 35px;
+    border: 5px solid var(--secondary-color);
+    transition-duration: 0.5s;
+    z-index: -15;
+}
+
+.cards:hover .houseButtons {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.houseImages {
+    border-radius: 5px;
+    border: 10px solid var(--primarycolor);
+    margin-left: 10px;
+    z-index: -11;
+}
+
+.houseButtons {
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin: 2px 0px;
+    display: none;
+    border: 2px solid var(--primarycolor);
+    outline: 2px solid var(--secondary-color);
+}
+
+.houseButtons:hover {
+    background-color: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+    color: var(--secondary-color);
+    font-weight: bolder;
+    height: 45px;
+    width: 210px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    border: 2px var(--primarycolor);
+}
+
+.houseLinks {
+    text-decoration: none;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primarycolor);
+    padding-top: 0px;
+    font-weight: bold;
+}
+
+.houseDescription {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@media screen and (max-width: 1074px) {
+
+    #goToDiv {
+        font-family: lelawadee, monospace;
+        font-weight: bold;
+        font-size: larger;
+        color: var(--primarycolor);
+        margin-top: 10px;
+        background-color: var(--secondary-color);
+        border: 3px solid var(--primarycolor);
+        width: 200px;
+        border-radius: 5px;
+        height: 30px;
+        position: relative;
+        animation-name: goToDivAnimation;
+        animation-duration: 4s;
+        padding-left: 20px;
+    }
+
+    .cards {
+        transform: scale(0.7);
+    }
+
+    #primaryDiv {
+        column-count: 2;
+    }
+}
+.lowerHolder{
+    color: black;
+    height: 300px;
+    display: block;
+    margin: 0px;
+}
+}

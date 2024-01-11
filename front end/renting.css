@@ -1,0 +1,298 @@
+*{
+    scroll-behavior: smooth;
+}
+:root {
+    --primarycolor: #3a5df1;
+    --secondary-color: #fff;
+    --font-family: Microsoft Tai Le, monospace;
+    }
+    
+body {
+    display: flex;
+    flex-flow: column wrap;
+    overflow-x: none;
+}
+
+.card {
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 15px;
+    position: relative;
+}
+.material-icons{
+color: white;
+padding: 10px 10px;
+}
+
+
+.message{
+    background-color: var(--primarycolor);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+   float: right;
+   /* transform: translate(400px); */
+   display: inline-flex;
+   box-shadow:5px 3px 3px 2px rgba(0, 0, 0, 0.664);
+   margin-left: 520px;
+}
+.message:hover{
+    cursor: pointer;
+    box-shadow: none;
+border-radius: 50%;
+}
+#time{
+    font-size: large;
+    font-weight: 200;
+width: 200px;
+height: 40px;
+box-sizing: border-box;
+color: white;
+
+}
+.display{
+    background-color: #3d5bf1;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 250px;
+    height: 49px;
+    color:white;
+    display: none;
+    padding: 15px 10px 5px 50px;
+    font-size: larger;
+    animation-name: startMovement;
+    animation-duration: 4s;
+    animation-delay: 500ms;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-iteration-count: 3;
+    transition-duration: 4s;
+    transition-property: all;
+    transform-box: 3;
+}
+@keyframes startMovement{
+    0%{width: 30px;}
+    10%{width: 60px;}
+    20%{width: 90px;}
+    30%{width: 120px;}
+    40%{width: 150px;}
+    50%{width: 180px;}
+    60%{width: 210px;}
+    70%{width: 240px;}
+    80%{width: 270px;}
+    90%{width: 300px;}
+    100%{width: 300px;}
+}
+.message:hover .display{
+    display: inline-flex;
+    transition-duration: 2s;
+}
+@media screen and (max-width:1405px){
+    .card, .descriptionHolder,img,.lowerHolder,.map{
+        transform: scale(0.95);
+    }
+    .descriptionHolder{
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:873px){
+    .descriptionHolder{
+        display: block;
+    }
+    .descriptionHolder{
+        padding-left: 40px;
+    }
+}
+img {
+    border-radius: 90px / 35px;
+    border: 5px solid var(--primarycolor);
+    outline: 5px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+}
+.fullad{
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+.map {
+    width: 100%;
+    height: 500px;   
+}
+a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+.changePic {
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    border: 5px;
+    margin: 10px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--primarycolor);
+    font-size: large;
+    font-family: Microsoft Tai Le, monospace;
+    font-weight: bold;
+}
+
+.descriptionHolder {
+    padding-left: 0px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+color: black;
+    height: 450px;
+
+}
+
+.upperHolder {
+    display: flex;
+    justify-content: space-between;
+    font-family: Microsoft Tai Le, monospace;
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 400px;
+    margin-top: 70px;
+}
+.mapButton{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--primarycolor);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+
+}
+.mapButton:hover{
+    cursor: pointer; 
+}
+.lowerHolder{
+    color: black;
+    height: 300px;
+    display: block;
+    margin: 0px;
+}
+.smlinks{
+    float: right;
+    margin-top: 150px ;
+    display: block;
+    color: var(--primarycolor);
+}
+ion-icon{color: gray;}
+ion-icon:hover{
+    color: black;
+    font-size: larger;
+}
+.introduction {
+    float: left;
+    padding: auto;
+    margin: 15px;
+    font-size: large;
+    width: 470px;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+#navbar {
+    overflow: hidden;
+position: fixed;
+z-index: 10;
+background-color: var(--primarycolor);
+height: 60px;
+width: 100%;
+padding: 0;
+color: var(--secondary-color);
+font-size: larger;
+font-family: var(--font-family);
+}
+
+#smallMenuBar {
+color: var(--secondary-color);
+}
+
+ul {
+display: flex;
+float: right;
+}
+
+.darkTheme {
+--primarycolor: rgba(2, 2, 102, 0.884);
+--secondary-color: black;
+}
+
+.links {
+text-decoration: none;
+float: right;
+padding: 5px;
+margin: 5px;
+height: 45px;
+margin-top: 0px;
+margin-left: 10px;
+margin-right: 10px;
+width: 110px;
+margin-bottom: 10px;
+color: var(--secondary-color);
+font-family: Leelawadee, monospace;
+text-decoration: none;
+border-radius: 5px;
+text-align: center;
+font-weight: bolder;
+height: 10px;
+width: 120px;
+
+}
+
+.links:hover {
+color: var(--primarycolor);
+background-color: var(--secondary-color);
+border-radius: 5px;
+transition-duration: 0.3s;
+height: 30px;
+}
+
+li {
+list-style-type: none;
+font-family: Leelawadee, monospace;
+color: var(--secondary-color);
+text-align: center;
+display: inline-flex;
+}
+
+.importantClicks {
+float: right;
+color: var(--secondary-color);
+display: inline-flex;
+cursor: pointer;
+}
+.contact{
+    float: right;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: x-large;
+    margin-right: 300px;
+    font-weight: bold;
+    display: block;
+
+}
+.linkHolder{
+    padding-right: 200px;
+}

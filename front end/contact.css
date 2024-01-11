@@ -1,0 +1,75 @@
+body {
+  background-image: url(background.jpg);
+  background-color: linear-gradient(rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px; /* Adjust spacing as needed */
+  font-size: 2.5rem;
+}
+
+.contactform {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(150, 150, 150, 0.3));
+  margin: 5% 10%; /* Adjust margins as needed */
+  padding: 20px;
+  color: white;
+  box-shadow: -5px -6px 5px 5px #000000;
+}
+
+label {
+  font-size: larger;
+  color: whitesmoke;
+}
+
+nav {
+  margin: 25px 0px;
+}
+
+#button {
+  background: white;
+  padding: 10px 30px;
+}
+
+input,
+textarea {
+  padding: 5px 50px; /* Adjust padding as needed */
+  width: 100%; /* Take up the full width of the container */
+  box-sizing: border-box;
+}
+
+a {
+  color: red;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+      margin-top: 30px; /* Adjust spacing for smaller screens */
+  }
+
+  .contactform {
+      margin: 5% 5%; /* Adjust margins for smaller screens */
+  }
+
+  input,
+  textarea {
+      padding: 5px 30px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .contactform {
+      margin: 5% 3%; /* Adjust margins for even smaller screens */
+  }
+
+  input,
+  textarea {
+      padding: 5px 20px; /* Adjust padding for even smaller screens */
+  }
+}

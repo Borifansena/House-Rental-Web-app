@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a house easily!!!</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<script src="../js/buy.js"></script>
+
+<body onload="displayTime()">
+    <nav id="navigation">
+        <div id="navbar">
+            <p class="introduction">Buy or rent houses at <strong>Real Estate Holdings</strong></p>
+            <span class='introduction' id="time"></span>
+            <ul>
+                <li><a class="links" href="home.html">HOME</a></li>
+                <li><a class="links" href="e-contracts.html">E-CONTRACTS</a></li>
+                <li><a class="links" href="aboutus.html">ABOUT US</a></li>
+                <li>
+                    <p class=".links importantClicks" id="settings"><i class="material-icons">settings</i></p>
+                </li>
+                <li>
+                    <p class=".links importantClicks" id="darkTheme" onclick="darkTheme()"><i
+                            class="material-icons">dark_mode</i></p>
+                </li>
+                <li>
+                    <p class=".links importantClicks" id="lightTheme" onclick="lightTheme()"><i
+                            class="material-icons">light_mode</i></p>
+                </li>
+                <p id="smallMenuBar"><i class="material-icons">menu</i></p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="search"><button id="searchButton"><a><i class="material-icons">search</i></a></button><input type="search"
+            name="search" id="searchBox" placeholder="Search place.."></div>
+    <div id="goToDiv">Go to...
+        <div id="navigatorToPage">
+            <ol>
+                <li class="changePageListItems" value="renting"><a class="changePageLinks" href="renting.html">Rent a
+                        house</a>
+                </li>
+                <li class="changePageListItems" value="booking"><a class="changePageLinks" href="book.html">Book a
+                        room</a></li>
+                <li class="changePageListItems" value="buying"><a class="changePageLinks" href="home.html">Buy a
+                        house</a></li>
+                <li class="changePageListItems" value="selling"><a class="changePageLinks" href="sell.html">Sell a
+                        house</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <p id="caption">House dealership</p>
+    <div id="advert" onload="advertisement()">
+        <img src="../images/ad.jpg" alt="advertisement" width="560px" height="720px" id="image">
+    </div>
+    <div id="primaryDiv">
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house1.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: John Armani</p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house1.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house2.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: Robert Astor</p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house2.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house3.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: Charles Robinson </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house3.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house4.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: William McCole</p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house4.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <p id="time" on></p>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house5.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: David Jones</p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house5.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house6.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: Michael Smith</p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house6.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house7.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: John Doe</p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house7.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house8.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house8.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house9.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house9.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house10.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house10.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house11.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house11.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house12.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house12.html"><button title="View the house" class="houseButtons">VIEW
+                        <i class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house13.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house13.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house14.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house14.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house15.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house15.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house16.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house16.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house17.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house17.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+        <div class="cards">
+            <img class="houseImages" src="../images/buy/house18.jpg" alt="house image" width="360px" height="240px">
+            <div class="houseDescriptionDivs">
+                <p class="houseDescription">Owner: </p>
+                <p class="houseDescription">Tel: +250 782 307 144</p>
+                <p class="houseDescription">Price: $20M</p>
+                <p class="houseDescription">Location: KK 105 St</p>
+                <a class="houseLinks" href="buyingPages/house18.html"><button title="View the house" class="houseButtons">VIEW <i
+                            class="material-icons">forward</i></button></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="lowerHolder">
+            <p class="contact">Contact the Developer</p>
+            <span class="linkHolder">
+                <span class="smlinks" type='LinkedIn'><a href='#'>
+                        <ion-icon name="logo-linkedin" style="font-size: 60px;"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Facebook'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-facebook"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Instagram'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-instagram"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Twitter'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-twitter"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Email'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="mail-outline"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Github'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-github"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Google Account'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-google"></ion-icon>
+                    </a></span>
+            </span>
+        </div>
+        <p>Powered by Precieux Programming</p>
+    </div>
+</body>
+
+</html>

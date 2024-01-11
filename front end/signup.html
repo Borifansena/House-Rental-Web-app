@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="house.png" type="image/x-icon" />
+    <title>Sign up for Ethiopian Rentals</title>
+    <script src="signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body>
+    <div id="form">
+      <div id="logo">
+        <img id="img" src="house.png" width="40px" height="40px" alt="logo" />
+        <p id="signin">Sign up to Find Nest</p>
+      </div>
+      <form id="formHandler" onsubmit="confpass(event)">
+        <div>
+          <label class="input" for="Email"
+            >Email
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="eg: yourname@domain-name.com"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="Names"
+            >Full names
+            <input
+              type="text"
+              name="names"
+              id="name-input"
+              place="Write your full names here"
+              placeholder="eg: Mwenedata Apotre"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="Username"
+            >Username
+            <input
+              type="text"
+              name="uname"
+              id="uname-input"
+              placeholder="Enter username"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="number"
+            >Phone number
+            <input
+              type="number"
+              name="phone"
+              id="phone-input"
+              placeholder="eg: Enter phone number"
+              minlength="10"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="Password"
+            >Password
+            <input
+              type="password"
+              name="pswd"
+              id="password-input"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="confirmation"
+            >Confirm Password
+            <input type="password" name="confirm" id="confirm-input" required />
+          </label>
+        </div>
+        <button id="submit-btn" type="submit">SUBMIT</button>
+      </form>
+      <p>Have an account? <a href="login.html">Login</a></p>
+    </div>
+  </body>
+</html>
