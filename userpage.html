@@ -4,162 +4,197 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="userpage.css" />
   </head>
   <body>
-    <div class="houses-list">
-      <h2>Explore Available Houses</h2>
-      <ul class="houses-list">
-        <li class="house-item" id="house-1">
-          <img src="images-1.jpg" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: San Francisco</p>
-            <p class="house-price">Price: $1,250,000</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="Group 1(1).png" />
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
 
-        <li class="house-item" id="house-2">
-          <img
-            src="data:image/jpeg;base64,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"
-            alt=""
-          />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+    <main>
+      <div class="welcome">
+        <h1>Welcome To Our Website</h1>
+        <h2><b>Find YOUR Stay</b></h2>
+        <p>
+          Easily browse thousands of unique homes and apartments. What are you
+          waiting for? Book your next adventure today
+        </p>
+      </div>
 
-        <li class="house-item" id="house-3">
-          <img
-            src="data:image/jpeg;base64,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"
-            alt=""
-          />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+      <div class="houses-list">
+        <h2>Explore Available Houses</h2>
+        <ul class="houses-list">
+          <li class="house-item" id="house-1">
+            <img src="house 2.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Saris</p>
+              <p class="house-price">Price: 12,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-2">
+            <img src="house4.jpg" alt="" />
+            />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Bole</p>
+              <p class="house-price">Price: 50,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-3">
+            <img src="house 3.jpg" alt="house-3" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Shegole</p>
+              <p class="house-price">Price: 30,000 Birrr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-4">
+            <img src="house 5.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Ayer Tena</p>
+              <p class="house-price">Price: 25,000 birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-5">
+            <img src="house 6.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Betel</p>
+              <p class="house-price">Price: 50,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-6">
+            <img src="house 7.jpg" alt="house-7" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Piassa</p>
+              <p class="house-price">Price: 67,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-7">
+            <img src="house 8.jpg" alt="house-8" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Megenagna</p>
+              <p class="house-price">Price: 40,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-8">
+            <img src="house 9.webp" alt="house-9" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Bulbula</p>
+              <p class="house-price">Price: 35,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-9">
+            <img src="house 10.jpg" alt="house-10" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Figa</p>
+              <p class="house-price">Price: 80,000Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
-          </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
+          <li class="house-item" id="house-10">
+            <img src="house 11.jpg" alt="house-11" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Goro</p>
+              <p class="house-price">Price: 20,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
 
-        <li class="house-item" id="house-4">
-          <img src="" alt="" />
-          <div class="hidden-info hidden">
-            <p class="house-location">Location: (House 2 Location)</p>
-            <p class="house-price">Price: (House 2 Price)</p>
+          <li class="house-item" id="house-11">
+            <img src="house 11.jpg" alt="house-12" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Torhayiloch</p>
+              <p class="house-price">Price: 70,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
-          <button type="button" onclick="toggleDetails(this)">
-            Show Details
-          </button>
-        </li>
-      </ul>
-    </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="safibunny9016@gmail.com">safibunny9016@gmail.com</a>
+              </li>
+              <li><a href="#">Phone number 0912345678 </a></li>
+              <li><a href="#">@fetu99</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="userpage.js"></script>
   </body>
 </html>
