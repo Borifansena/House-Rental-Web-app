@@ -1,0 +1,28 @@
+.hidden {
+  display: none; /* Hide elements with the hidden class */
+}
+
+/* Basic styling for house list */
+.houses-list {
+  list-style: none;
+  padding: 0;
+}
+
+.house-item {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.house-item button {
+  margin-top: 10px;
+}
+
+/* Additional styling (optional) */
+.house-location {
+  font-weight: bold;
+}
+
+.house-price {
+  color: green;
+}
