@@ -1,23 +1,30 @@
-import { Schema, SchemaFactory, Prop } from '@nestjs/mongoose';
+import { Prop, Schema } from "@nestjs/mongoose";
+import { House } from "../house/schemas/house.schema";
 import { Document } from 'mongoose';
-import { Role } from './role.enum';
 
-export type UserDocument = User & Document;
 
-@Schema()
-export class User {
-  @Prop({
-    required: true,
-  })
-  username: string;
+@Schema({
+  timestamps: true,
+})
 
-  @Prop({
-    required: true
-  })
+export class user extends Document{
+  id(House: House, user: user, id: any) {
+    throw new Error('Method not implemented.');
+  }
+    static password(password: any, password1: any): any {
+        throw new Error('Method not implemented.');
+    }
+  @Prop
+  name: string;
+
+  @Prop
+  email: string;
+
+  @Prop
   password: string;
-
-  @Prop({ enum: ['admin', 'user'] })
-  role: Role;
+    static _id: any;
 }
 
-export const UserSchema = SchemaFactory.createForClass(User);
+
+export const userSchema = SchemaFactory.createForClass(User);
+
