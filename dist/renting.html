@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="path/to/tailwind.css">
+  <link rel="stylesheet" href="path/to/custom.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a house easily!!!</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+    <script src="https://kit.fontawesome.com/8341b376f5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<script src="../js/buy.js"></script>
+
+<body class="bg-gray-100" onload="displayTime()">
+    <nav id="navigation" class="bg-white shadow-lg">
+        <div id="navbar" class="container mx-auto px-4 py-2 flex items-center justify-between">
+            <p class="introduction">Buy or rent houses at <strong>Real Estate Holdings</strong></p>
+            <span class='introduction' id="time"></span>
+            <ul class="flex space-x-4">
+                <li><a class="links" href="home.html">HOME</a></li>
+                <li><a class="links" href="e-contracts.html">E-CONTRACTS</a></li>
+                <li><a class="links" href="aboutus.html">ABOUT US</a></li>
+                <li>
+                    <p class=".links importantClicks" id="settings"><i class="material-icons">settings</i></p>
+                </li>
+                <li>
+                    <p class=".links importantClicks" id="darkTheme" onclick="darkTheme()"><i
+                            class="material-icons">dark_mode</i></p>
+                </li>
+                <li>
+                    <p class=".links importantClicks" id="lightTheme" onclick="lightTheme()"><i
+                            class="material-icons">light_mode</i></p>
+                </li>
+                <p id="smallMenuBar"><i class="material-icons">menu</i></p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="search" class="flex items-center justify-between px-4 py-2 bg-gray-200">
+        <button id="searchButton" class="px-3 py-2 rounded-full bg-white"><a><i class="material-icons">search</i></a></button>
+        <input type="search" name="search" id="searchBox" placeholder="Search place.." class="px-3 py-2 rounded-lg">
+    </div>
+    <div id="goToDiv" class="px-4 py-2 mt-4">
+        <p class="text-lg font-bold">Go to...</p>
+        <div id="navigatorToPage" class="mt-2">
+            <ol>
+                <li class="changePageListItems" value="renting"><a class="changePageLinks" href="renting.html">Rent a
+                        house</a>
+                </li>
+                <li class="changePageListItems" value="booking"><a class="changePageLinks" href="book.html">Book a
+                        room</a></li>
+                <li class="changePageListItems" value="buying"><a class="changePageLinks" href="home.html">Buy a
+                        house</a></li>
+                <li class="changePageListItems" value="selling"><a class="changePageLinks" href="sell.html">Sell a
+                        house</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="cards">
+                <img class="houseImages" src="./" alt="house image" width="360px" height="240px">
+                <div class="houseDescriptionDivs">
+                    <p class="houseDescription">Owner: </p>
+                    <p class="houseDescription">Tel: +250 782 307 144</p>
+                    <p class="houseDescription">Price: $20M</p>
+                    <p class="houseDescription">Location: KK 105 St</p>
+                    <a class="houseLinks" href="buyingPages/house8.html">
+                        <button title="View the house" class="houseButtons">VIEW
+                            <i class="material-icons">forward</i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <img class="houseImages" src="../images/buy/house9.jpg" alt="house image" width="360px" height="240px">
+                <div class="houseDescriptionDivs">
+                    <p class="houseDescription">Owner: </p>
+                    <p class="houseDescription">Tel: +250 782 307 144</p>
+                    <p class="houseDescription">Price: $20M</p>
+                    <p class="houseDescription">Location: KK 105 St</p>
+                    <a class="houseLinks" href="buyingPages/house9.html">
+                        <button title="View the house" class="houseButtons">VIEW
+                            <i class="material-icons">forward</i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="cards">
+                        <img class="houseImages" src="../images/buy/house8.jpg" alt="house image" width="360px" height="240px">
+                        <div class="houseDescriptionDivs">
+                            <p class="houseDescription">Owner: </p>
+                            <p class="houseDescription">Tel: +250 782 307 144</p>
+                            <p class="houseDescription">Price: $20M</p>
+                            <p class="houseDescription">Location: KK 105 St</p>
+                            <a class="houseLinks" href="buyingPages/house8.html">
+                                <button title="View the house" class="houseButtons">VIEW
+                                    <i class="material-icons">forward</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img class="houseImages" src="../images/buy/house9.jpg" alt="house image" width="360px" height="240px">
+                        <div class="houseDescriptionDivs">
+                            <p class="houseDescription">Owner: </p>
+                            <p class="houseDescription">Tel: +250 782 307 144</p>
+                            <p class="houseDescription">Price: $20M</p>
+                            <p class="houseDescription">Location: KK 105 St</p>
+                            <a class="houseLinks" href="buyingPages/house9.html">
+                                <button title="View the house" class="houseButtons">VIEW
+                                    <i class="material-icons">forward</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+            <!-- Repeat the above code for the remaining cards -->
+        </div>
+    </div>
+    <div id="footer">
+        <div class="lowerHolder">
+            <p class="contact">Contact the Developer</p>
+            <span class="linkHolder">
+                <span class="smlinks" type='LinkedIn'><a href='#'>
+                        <ion-icon name="logo-linkedin" style="font-size: 60px;"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Facebook'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-facebook"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Instagram'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-instagram"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Twitter'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-twitter"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Email'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="mail-outline"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Github'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-github"></ion-icon>
+                    </a></span>
+                <span class="smlinks" type='Google Account'><a href='#'>
+                        <ion-icon style="font-size: 60px;" name="logo-google"></ion-icon>
+                    </a></span>
+            </span>
+        </div>
+        <p>Powered by Precieux Programming</p>
+    </div>
+</body>
+
+</html>

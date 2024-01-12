@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="userpage.css" />
+    <link rel="stylesheet" href="path/to/tailwind.css">
+    <link rel="stylesheet" href="./custom.css">
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="./Group 1(1) .png" alt="Logo">
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Adminpage.html">Admin</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-white">
+        <h1 style="color: red;">Welcome To Our Website</h1>
+        <h2><b style="color: greenyellow;">Find YOUR Stay</b></h2>
+        <p>
+          Easily browse thousands of unique homes and apartments. What are you
+          waiting for? Book your next adventure today
+        </p>
+      </div>
+
+      <div class="houses-list">
+        <h2>Explore Available Houses</h2>
+        <ul class="houses-list">
+          <li class="house-item" id="house-1">
+            <img src="house 2.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Saris</p>
+              <p class="house-price">Price: 12,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-2">
+            <img src="house4.jpg" alt="" />
+            />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Bole</p>
+              <p class="house-price">Price: 50,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-3">
+            <img src="house 3.jpg" alt="house-3" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Shegole</p>
+              <p class="house-price">Price: 30,000 Birrr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-4">
+            <img src="house 5.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Ayer Tena</p>
+              <p class="house-price">Price: 25,000 birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-5">
+            <img src="house 6.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Betel</p>
+              <p class="house-price">Price: 50,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-6">
+            <img src="house 7.jpg" alt="house-7" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Piassa</p>
+              <p class="house-price">Price: 67,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-7">
+            <img src="house 8.jpg" alt="house-8" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Megenagna</p>
+              <p class="house-price">Price: 40,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-8">
+            <img src="house 9.webp" alt="house-9" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Bulbula</p>
+              <p class="house-price">Price: 35,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-9">
+            <img src="house 10.jpg" alt="house-10" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Figa</p>
+              <p class="house-price">Price: 80,000Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-10">
+            <img src="house 11.jpg" alt="house-11" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Goro</p>
+              <p class="house-price">Price: 20,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-11">
+            <img src="house 11.jpg" alt="house-12" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Torhayiloch</p>
+              <p class="house-price">Price: 70,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer mt-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ol>
+              <li><a href="mailto:safibunny9016@gmail.com">safibunny9016@gmail.com</a></li>
+              <li><a href="#">Phone:0912345678</a></li>
+            
+            </ol>
+          </div>
+          <div class="footer-col">
+            <h4 style="background-color: black;">follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="userpage.js"></script>
+  </body>
+</html>

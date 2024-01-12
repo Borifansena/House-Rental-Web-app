@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "name": "adderesponsiv",
+  "description": "Welcome to our House-Rental-Web-app It is a platform that connects landlords and tenants, providing a user-friendly interface for searching and renting properties online. It simplifies the process by offering property listings, search filters, and detailed information, allowing tenants to find suitable rental options and landlords to showcase their properties to a wide audience.",
+  "version": "1.0.0",
+  "main": "house.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
