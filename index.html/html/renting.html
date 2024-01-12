@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/house.png" type="image/x-icon" />
+    <title>Rent on Find Nest</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/renting.css" />
+  </head>
+
+  <body>
+    <div id="form">
+      <div id="logo">
+        <img
+          id="img"
+          src="../images/house.png"
+          width="40px"
+          height="40px"
+          alt="logo"
+        />
+        <p id="signin">Rent on Find Nest</p>
+        <br />
+      </div>
+      <form action="#" method="POST">
+        <div>
+          <label class="input" for="Email"
+            >Email
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="eg: yourname@domain-name.com"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="Password"
+            >Password
+            <input
+              type="password"
+              name="pswd"
+              id="password-input"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label class="input" for="price"
+            >Price (ETB)
+            <input
+              type="number"
+              name="price"
+              id="price-input"
+              placeholder="Enter price"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <button type="submit" id="rent-btn">Rent</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../scripts/renting.js"></script>
+  </body>
+</html>

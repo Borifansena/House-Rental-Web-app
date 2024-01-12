@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About us| Find Nest</title>
+    <link rel="stylesheet" href="../styles/userpage.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+
+  <title>Document</title>
+  </head>
+
+
+
+  <body>
+    <header
+      class="header bg-white py-4 px-6 flex justify-content-between align-items-center"
+    >
+      <a href="#" class="font-bold text-xl"> Find Nest</a>
+      <div class="main">
+        <div class="logo">
+          <img src="../images/Group 1(1).png" 
+          >
+          <style>
+            .logo img {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+          </style>
+        </div>
+
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark order-md-first d-flex justify-content-end"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="Group 1(1).png" />
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="welcome">
+        <h1>Welcome To Our Website</h1>
+        <h2><b>Find YOUR Stay</b></h2>
+        <p>
+          Easily browse thousands of unique homes and apartments. What are you
+          waiting for? Book your next adventure today
+        </p>
+      </div>
+
+      <div class="houses-list">
+        <h2>Explore Available Houses</h2>
+        <ul class="houses-list">
+          <li class="house-item" id="house-1">
+            <img src="../images/house 2.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Saris</p>
+              <p class="house-price">Price: 12,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-2">
+            <img src="../images/house4.jpg" alt="" />
+            />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Bole</p>
+              <p class="house-price">Price: 50,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-3">
+            <img src="../images/house 3.jpg" alt="house-3" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Shegole</p>
+              <p class="house-price">Price: 30,000 Birrr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-4">
+            <img src="../images/house 5.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Ayer Tena</p>
+              <p class="house-price">Price: 25,000 birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-5">
+            <img src="../images/house 6.jpg" alt="" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Betel</p>
+              <p class="house-price">Price: 50,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-6">
+            <img src="../images/house 7.jpg" alt="house-7" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Piassa</p>
+              <p class="house-price">Price: 67,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-7">
+            <img src="../images/house 8.jpg" alt="house-8" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Megenagna</p>
+              <p class="house-price">Price: 40,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-8">
+            <img src="../images/house 9.webp" alt="house-9" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Bulbula</p>
+              <p class="house-price">Price: 35,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-9">
+            <img src="../images/house 10.jpg" alt="house-10" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Figa</p>
+              <p class="house-price">Price: 80,000Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-10">
+            <img src="../images/house 11.jpg" alt="house-11" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Goro</p>
+              <p class="house-price">Price: 20,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+
+          <li class="house-item" id="house-11">
+            <img src="../images/house 11.jpg" alt="house-12" />
+            <div class="hidden-info hidden">
+              <p class="house-location">Location: Torhayiloch</p>
+              <p class="house-price">Price: 70,000 Birr</p>
+            </div>
+            <button type="button" onclick="toggleDetails(this)">
+              Show Details
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="safibunny9016@gmail.com">safibunny9016@gmail.com</a>
+              </li>
+              <li><a href="#">Phone number 0912345678 </a></li>
+              <li><a href="#">@fetu99</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.fa-twitter.com"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.fa-instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.fa-linkedin-in.com"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div><p>CopyRight©️By House Rental All right reserved</p></div>
+
+    </footer>
+
+    <script src="../scripts/userpage.js"></script>
+
+    
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../scripts/userpage.js"></script>
+  <script src="header.js"></script>
+  </body>
+</html>

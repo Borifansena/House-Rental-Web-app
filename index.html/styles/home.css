@@ -1,11 +1,11 @@
 /* Base styles for the body and text */
 body {
   font-family: Arial, sans-serif;
-  background-image: url("background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover; /* Ensure the image covers the entire background */
   background-position: center; /* Center the image */
   text-align: center; /* Align content to the center */
-  color: bisque; /* Ensure text readability against the background */
+  color: white!important; /* Ensure text readability against the background */
   box-sizing: border-box;
 }
 
@@ -29,6 +29,12 @@ p {
 
 /* Styles for the buttons */
 .buttons {
+  display: flex ;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 200px;
+  margin: 10px;
+  padding: 16px;
   background-color: #007bff; /* Use a contrasting color for buttons */
   color: #fff;
   border: none;
@@ -53,6 +59,11 @@ p {
 .links {
   text-decoration: none; /* Remove underline from links within buttons */
   color: inherit; /* Inherit button text color */
+}
+.copyR {
+  display: inline-block;
+  align-items: center;
+  color: black !important;
 }
 
 /* Responsive styles */
