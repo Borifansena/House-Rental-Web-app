@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="house.png" type="image/x-icon" />
+    <title>Sign up for Ethiopian Rentals</title>
+    <script src="signup.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="path/to/tailwind.css">
+  <link rel="stylesheet" href="path/to/custom.css">
+  <body>
+    <div id="form" class="flex flex-col items-center mt-8">
+      <div id="logo" class="mb-4">
+        <img id="img" src="house.png" width="40px" height="40px" alt="logo" />
+        <p id="signin" class="text-xl font-bold">Sign up to Find Nest</p>
+      </div>
+      <form id="formHandler" onsubmit="confpass(event)" class="w-64">
+        <div class="mb-4">
+          <label class="input" for="Email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            placeholder="eg: yourname@domain-name.com"
+            required
+            class="border border-gray-300 px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="input" for="Names">Full names</label>
+          <input
+            type="text"
+            name="names"
+            id="name-input"
+            place="Write your full names here"
+            placeholder="eg: Mwenedata Apotre"
+            required
+            class="border border-gray-300 px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="input" for="Username">Username</label>
+          <input
+            type="text"
+            name="uname"
+            id="uname-input"
+            placeholder="Enter username"
+            required
+            class="border border-gray-300 px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="input" for="number">Phone number</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone-input"
+            placeholder="eg: Enter phone number"
+            minlength="10"
+            required
+            class="border border-gray-300 px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="input" for="Password">Password</label>
+          <input
+            type="password"
+            name="pswd"
+            id="password-input"
+            placeholder="Password"
+            minlength="8"
+            required
+            class="border border-gray-300 px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="input" for="confirmation">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm"
+            id="confirm-input"
+            required
+            class="border border-gray-300 px-4 py-2 w-full"
+          />
+        </div>
+        <button id="submit-btn" type="submit" class="bg-blue-500 text-white px-4 py-2 w-full">SUBMIT</button>
+      </form>
+      <p class="mt-4">Have an account? <a href="login.html" class="text-blue-500">Login</a></p>
+    </div>
+  </body>
+</html>

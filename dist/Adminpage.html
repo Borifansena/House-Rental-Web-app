@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <title>Admin | Find Nest</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+      <link rel="stylesheet" href="path/to/tailwind.css">
+    <link rel="stylesheet" href="path/to/custom.css">
+    </head>
+
+  <body>
+    <header>
+      <div class="bg-gray-200">
+        <div class="container mx-auto py-4 flex items-center justify-between">
+          <div class="logo">
+            <img src="./path/to/Group 1(1).png" alt="Logo">
+          </div>
+          <ul class="flex">
+            <li><a href="home.html" class="px-4 py-2">Home</a></li>
+            <li><a href="about.html" class="px-4 py-2">About Us</a></li>
+            <li><a href="Contact.html" class="px-4 py-2">Contact Us</a></li>
+            <li><a href="Adminpage.html" class="px-4 py-2">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+      <h1 class="text-3xl font-bold mb-4">Welcome To Admin Page</h1>
+
+      <div class="mb-4">
+        <label for="address" class="block mb-2">Address:</label>
+        <input type="text" id="address" placeholder="Enter address" class="border border-gray-300 px-4 py-2 w-full" />
+      </div>
+
+      <div class="mb-4">
+        <label for="houseId" class="block mb-2">House ID:</label>
+        <input type="text" id="houseId" placeholder="Enter house ID" class="border border-gray-300 px-4 py-2 w-full" />
+      </div>
+
+      <div class="mb-4 flex">
+        <button id="fetchBtn" class="bg-blue-500 text-white px-4 py-2 mr-2">Fetch House</button>
+        <button id="createBtn" class="bg-blue-500 text-white px-4 py-2 mr-2">Create House</button>
+        <button id="updateBtn" class="bg-blue-500 text-white px-4 py-2 mr-2">Update House</button>
+        <button id="deleteBtn" class="bg-blue-500 text-white px-4 py-2 mr-2">Delete House</button>
+        <button class="bg-blue-500 text-white px-4 py-2">Rent</button>
+      </div>
+
+      <div class="mb-4">
+        <h2 class="text-xl font-bold mb-2">Houses:</h2>
+        <ul id="houseList" class="list-disc pl-4"></ul>
+      </div>
+    </main>
+
+    <footer class="footer mt-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ol>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ol>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ol>
+              <li><a href="mailto:safibunny9016@gmail.com">safibunny9016@gmail.com</a></li>
+              <li><a href="#">Phone:0912345678</a></li>
+            
+            </ol>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+    <script src="house.js"></script>
+  </body>
+</html>

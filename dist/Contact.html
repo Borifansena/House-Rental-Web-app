@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact | Find Nest</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="path/to/tailwind.css">
+  <link rel="stylesheet" href="path/to/custom.css">
+</head>
+<body>
+  <header>
+    <header>
+      <div class="main flex justify-between items-center px-4 py-2">
+        <div class="logo">
+          <img src="./path/to/Group 1(1).png" alt="Logo">
+        </div>
+        <ul class="flex">
+          <li><a href="home.html" class="mr-4">Home</a></li>
+          <li><a href="about.html" class="mr-4">About Us</a></li>
+          <li><a href="Contact.html" class="mr-4">Contact Us</a></li>
+          <li><a href="Adminpage.html">Admin</a></li>
+        </ul>
+      </div>
+    </header>
+
+  <h1 class="text-3xl font-bold text-center mt-8 text-gray-50">Find Nest | Contacts</h1>
+
+  <div class="container mx-auto mt-8">
+    <form class="max-w-md mx-auto p-4 bg-red-700 rounded" action="Contact(1).form" method="post">
+      <div class="mb-4">
+        <label class="block">Name:</label>
+        <input type="text" name="name" placeholder="Name" required class="w-full rounded border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="mb-4">
+        <label class="block">Email:</label>
+        <input type="Email" name="email" placeholder="Email" required class="w-full rounded border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="mb-4">
+        <label class="block">Comments:</label>
+        <textarea rows="10" cols="20" name="comments" placeholder="message...." required class="w-full rounded border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <div class="mb-4">
+        <input type="Submit" name="SUBMIT" id="button" value="Submit" class="py-2 px-4 bg-blue-500 text-black font-semibold rounded hover:bg-blue-600">
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer bg-gray-200 py-8">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="footer-col">
+          <h4 class="font-bold">company</h4>
+          <Ol class="space-y-2">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">About</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+          </Ol>
+         
+        </div>
+        <div class="footer-col">
+          <h4 class="font-bold">get help</h4>
+          <ol>
+            <li><a href="mailto:safibunny9016@gmail.com">safibunny9016@gmail.com</a></li>
+            <li><a href="#">Phone:0912345678</a></li>
+          
+          </ol>
+        </div>
+        <div class="footer-col">
+          <h4 class="font-bold">follow us</h4>
+          <div class="flex space-x-2">
+            <a href="#"><i class="fab fa-facebook-f text-blue-500"></i></a>
+            <a href="#"><i class="fab fa-twitter text-blue-500"></i></a>
+            <a href="#"><i class="fab fa-instagram text-blue-500"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in text-blue-500"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

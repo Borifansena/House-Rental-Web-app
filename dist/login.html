@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="path/to/tailwind.css">
+<link rel="stylesheet" href="path/to/custom.css">
+  <link rel="shortcut icon" href="/dist/path/to/house.png" type="image/x-icon">
+  <title>Log in for Ethiopian House Rentals</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+  <div id="form" class="flex flex-col items-center justify-center h-screen">
+    <div id="logo" class="flex items-center mb-8">
+      <img id="img" src="/dist/path/to/Group 1.png" width="40px" height="40px" alt="logo" class="mr-2">
+      <p id="signin" class="text-2xl font-bold">Log in to Ethiopian Rentals</p>
+    </div>
+    <form action="#" method="POST" class="max-w-md mx-auto">
+      <div class="mb-4">
+        <label class="input" for="Email">
+          Email
+          <input type="email" name="email" id="email-input" placeholder="eg: yourname@domain-name.com" required
+            class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </label>
+      </div>
+      <div class="mb-4">
+        <label class="input" for="Password">
+          Password
+          <input type="password" name="pswd" id="password-input" placeholder="Password" minlength="8" required
+            class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </label>
+      </div>
+      <button type="submit" id="submit-btn"
+        class="w-full px-4 py-2 mt-4 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600">Log
+        In</button>
+    </form>
+    <p class="mt-4">Don't have an account? <a href="signup.html" class="text-blue-500">Sign Up</a></p>
+  </div>
+
+</body>
+
+</html>
